@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="icon" href="img/ico.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Phoenix Inspeções</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleMaisContato() {
+      const div = document.getElementById('mais-contato');
+      div.classList.toggle('ativo');
+    }
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <section>
+      <a href="index.html" class="logo"><img src="./img/logo.png" alt="logo"></a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </section>
+  </header>
+
+  <section style="margin-top: 100px;" class="contato">
+    <h2 class="title">Fale <span>Conosco</span></h2>
+
+    <!-- Formulário com FormSubmit -->
+    <form action="https://formsubmit.co/limaluckas79@gmail.com" method="POST" style="max-width: 600px; margin: auto;">
+      <input type="text" name="nome" placeholder="Seu nome" required style="width: 100%; padding: 1rem; margin-bottom: 1rem;">
+      <input type="email" name="email" placeholder="Seu e-mail" required style="width: 100%; padding: 1rem; margin-bottom: 1rem;">
+      <textarea name="mensagem" placeholder="Sua mensagem" required style="width: 100%; padding: 1rem; margin-bottom: 1rem;" rows="5"></textarea>
+
+      <!-- Proteções -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> <!-- Substitua pelo link da sua página de obrigado se quiser -->
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+
+    <div style="text-align: center; margin-top: 1rem;">
+      <button class="btn toggle-btn" onclick="toggleMaisContato()">Mais informações</button>
+    </div>
+
+    <div id="mais-contato" class="mais-contato">
+      <p class="content">E-mail: contato@phoenixinspecao.com.br</p>
+
+      <a href="https://wa.me/5581997598444" target="_blank" class="contato-link whatsapp-link">
+        <img src="img/whatsapp.png" alt="WhatsApp" class="contato-icon">
+        Fale no WhatsApp
+      </a>
+
+      <a href="https://www.google.com/maps?q=Rua+Dr.+Zamenhof,+N111,+Boa+Viagem,+Recife" target="_blank" class="contato-link maps-link">
+        <img src="img/maps.png" alt="Google Maps" class="contato-icon">
+        Ver no Google Maps
+      </a>
+
+      <a href="https://www.instagram.com/phoenixinspecoes/" target="_blank" class="contato-link insta-link">
+        <img src="img/instagram.png" alt="Instagram" class="contato-icon">
+        @phoenixinspecao
+      </a>
+
+      <a href="https://www.facebook.com/phoenixinspecaoindustrial" target="_blank" class="contato-link facebook-link">
+        <img src="img/facebook.png" alt="Facebook" class="contato-icon">
+        facebook.com/phoenixinspecao
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>

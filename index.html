@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="icon" href="img/ico.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <title>PHOENIX INSPEÇÕES</title>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <a href="#" class="logo" onclick="scrollToTop(event)">
+  <img src="./img/logo.png" alt="logo">
+</a>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </section>
+    </header>
+
+    <div class="home-container">
+        <section id="home">
+            <div class="content">
+                <h3>PHOENIX INSPEÇÕES</h3>
+                <p>
+                    A Phoenix Inspeções é uma empresa pernambucana com mais de 30 anos de experiência no setor industrial,
+                    especializada em inspeções técnicas, ensaios não destrutivos e consultorias em engenharia.
+                    Atuamos nos setores de petróleo, gás, logística, naval, energia e construção, oferecendo soluções eficazes,
+                    seguras e com excelente custo-benefício.
+                </p>
+                <p>
+                    Com uma equipe qualificada e estrutura moderna, buscamos garantir a integridade de equipamentos e a conformidade
+                    com normas técnicas como NR-13, NR-12, NR-20 e outras.
+                </p>
+                <a href="contato.html" class="btn">Contato</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="about" id="about">
+        <h2 class="title">INFORMAÇÃO <span>TÉCNICA</span></h2>
+        <div class="row">
+            <div class="container-image">
+                <img src="img/Operador1.jpg" alt="Informação Técnica">
+            </div>
+            <div class="content">
+                <h3>ENSAIOS E INSPEÇÕES</h3>
+                <p>
+                    A Phoenix realiza ensaios não destrutivos como ultrassom, partículas magnéticas, líquidos penetrantes,
+                    inspeção visual, PMI, entre outros. Atende também inspeções conforme normas regulatórias NR-13, NR-12 e NR-20.
+                </p>
+                <p>
+                    Todos os serviços são realizados com equipamentos de ponta, estrutura móvel (laboratório, caminhão munck e contêiner)
+                    e pessoal técnico qualificado para atender às necessidades do setor industrial moderno.
+                </p>
+                <a href="servicos.html" class="btn">Mais</a>
+            </div>
+        </div>
+    </section>
+    <script>
+  function scrollToTop(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+</body>
+
+</html>
