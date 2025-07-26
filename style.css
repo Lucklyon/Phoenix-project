@@ -1,153 +1,167 @@
 :root {
-    --main-collor: #ce6a3cc7;
-    --black: #000000;
-    --background: #000000;
-    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
-    font-size: 10px;
+  --main-collor: #ce6a3cc7;
+  --black: #000000;
+  --background: #000000;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  font-size: 10px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    text-decoration: 0;
-    text-transform: capitalize;
-    transition: 0.2s linear;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: 0;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .nomeempresarial {
   text-transform: uppercase;
 }
 
 
 body {
-    background-color: var(--background);
+  background-color: var(--background);
 }
 
 section {
-    padding: 3rem 2rem;
-    margin: 0 auto;
-    max-width: 1400px;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .header {
-    background-color: var(--background);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    border-bottom: var(--border);
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: var(--border);
 }
 
 .logo img {
-    width: 250px;
-    height: auto;
+  width: 350px;
+  height: auto;
 }
 
 .btn {
-    background: var(--main-collor);
-    color: #fff;
-    padding: 1rem 3rem;
-    display: inline-block;
-    font-size: 2.0rem;
-    cursor: pointer;
-    margin-top: 1rem;
-    display: inline-block;
+  background: var(--main-collor);
+  color: #fff;
+  padding: 1rem 3rem;
+  display: inline-block;
+  font-size: 2.0rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 .home-container {
-    background-image: url(img/Fundo.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+  background-image: url(img/Fundo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 
 }
 
 .home-container section {
-    display: flex;
-    height: 110vh;
+  display: flex;
+  height: 110vh;
 }
 
 .home-container .content {
-    max-width: 85rem;
-    margin-top: 20rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  max-width: 85rem;
+  margin-top: 20rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.925);
 }
-.content p {
-    font-size: 1.8rem !important;
-}
-.content h3 {
-    color: #fff;
-    font-size: 5rem;
-    padding: 1rem;
-    
+
+.home-container .btn {
+  max-width: 10rem;
 }
 
 .content p {
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem 0;
+  font-size: 1.8rem !important;
+}
+
+.content h3 {
+  color: #fff;
+  font-size: 5rem;
+  padding: 1rem;
+
+}
+
+.content p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
 
 }
 
 .header section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.4rem;
-    padding-bottom:0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .navbar a {
-    margin: 0 1rem;
-    font-size: 1.8rem;
-    color: #fff
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: #fff
 }
 
 .navbar a:hover {
-    color: darkgrey;
-    border-bottom: 0.1rem solid rgb(245, 240, 240);
-    padding-bottom: 0.5rem;
-    font-size: 2.0rem;
+  color: darkgrey;
+  border-bottom: 0.1rem solid rgb(245, 240, 240);
+  padding-bottom: 0.5rem;
+  font-size: 2.0rem;
 }
 
 .title {
-    font-size: 4rem;
-    color: var(--main-collor);
-    text-align: center;
-    margin-bottom: 7rem;
+  font-size: 4rem;
+  color: var(--main-collor);
+  text-align: center;
+  margin-bottom: 7rem;
 }
 
 .title span {
-    font-size: 4rem;
-    color: #fff;
-    text-align: center;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
 }
 
 .about .row {
-    align-items: flex-start;
-    display: flex;
-    color: #fff;
-    background-color: #222121;
-    gap: 3.5rem;
+  align-items: flex-start;
+  display: flex;
+  color: #fff;
+  background-color: #222121;
+  gap: 1.5rem;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
 }
 
 .about .row .content {
-
-    padding: 3rem;
-    align-items: flex-start;
+  flex: 1;
+  padding: 1rem 2rem;
 }
+
 .about .row .content h3 {
 
   font-size: 3.5rem;
   padding: 3.3rem;
- 
+
 }
 
 .container-image img {
-    width: 500px;
-    height: auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid #444;
 }
 
 
@@ -183,6 +197,7 @@ section {
   color: #fff;
   padding-left: 1.5rem;
 }
+
 .contato {
   max-width: 800px;
   margin: 10rem auto 5rem;
@@ -274,6 +289,7 @@ section {
 .maps-link:hover {
   background-color: #c53a2e;
 }
+
 .btn,
 .toggle-btn {
   background: var(--main-collor);
@@ -291,6 +307,7 @@ section {
   background-color: #b85a32;
   transform: scale(1.03);
 }
+
 .mais-contato {
   max-height: 0;
   overflow: hidden;
@@ -300,7 +317,191 @@ section {
 }
 
 .mais-contato.ativo {
-  max-height: 500px; /* valor grande o suficiente para o conteúdo */
+  max-height: 500px;
+  /* valor grande o suficiente para o conteúdo */
   opacity: 1;
 }
 
+/* RESPONSIVO PARA MOBILE */
+@media (max-width: 768px) {
+  html {
+    font-size: 5px;
+    /* reduz um pouco a base para evitar textos muito grandes */
+  }
+
+  .title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .title span {
+    font-size: 2.8rem;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 10;
+  }
+
+  .navbar a {
+    margin: 0rem 0;
+    font-size: 1.3rem;
+  }
+
+  .home-container section {
+    flex-direction: column;
+    height: auto;
+    padding-top: 10rem;
+  }
+
+  .home-container .content {
+    margin-top: 0rem;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .content h3 {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+
+  .content p {
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+  }
+
+  .about .row {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .about .row .content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .about .row .content h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+  }
+
+  .about .row .btn {
+    max-width: 10rem;
+  }
+
+  .container-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .servico-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .servico-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .btn,
+  .toggle-btn {
+    font-size: 1.6rem;
+    width: 20%;
+    max-width: 300px;
+    margin: 3rem auto;
+    /* Alinha à esquerda */
+    display: block;
+  }
+
+  .contato {
+    margin: 5rem 1rem;
+    padding: 2rem;
+  }
+}
+
+/* Ícone do menu mobile */
+.mobile-menu-icon {
+  display: none;
+  font-size: 3rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  /* Ícone no canto direito */
+  z-index: 100;
+}
+
+/* Menu lateral escondido à DIREITA */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  /* escondido fora da tela */
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  transition: right 0.3s ease;
+  z-index: 99;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Itens do menu */
+.mobile-sidebar a {
+  color: #fff;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.mobile-sidebar a:hover {
+  background-color: #222;
+  color: var(--main-collor);
+}
+
+/* Quando ativo, aparece da direita */
+.mobile-sidebar.active {
+  right: 0;
+}
+
+/* Visível só no mobile */
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container section {
+    height: 60vh;
+    /* aumenta a altura da imagem no mobile */
+  }
+
+  .home-container {
+    background-size: cover;
+    /* garante que preencha toda a nova altura */
+    background-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .desktoptext {
+      display: none;
+    }
+  }
+}
