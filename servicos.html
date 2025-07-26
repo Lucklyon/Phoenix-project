@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <link rel="icon" href="img/ico.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <title>Serviços - Phoenix Inspeções</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Fontes e CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
 
     .servicos-header .descricao {
       position: absolute;
-      top:15rem;
+      top: 15rem;
       right: 15rem;
       background-color: rgba(0, 0, 0, 0.253);
       padding: 1rem;
@@ -144,6 +145,55 @@
         margin-bottom: 1rem;
       }
     }
+
+    @media screen and (max-width: 768px) {
+      .servicos-header {
+        height: auto;
+        padding: 10rem 5rem;
+        background-size: 100rem;
+        background-position: center;
+      }
+
+      .servicos-header .descricao {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+
+      .servicos-titulo h1 {
+        font-size: 2.8rem;
+      }
+
+      .servicos-titulo {
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+        /* espaçamento inferior */
+        text-align: center;
+      }
+
+      .servico-section {
+        padding: 2rem 1rem;
+        margin: 2rem 1rem;
+      }
+
+      .servico-section h2 {
+        font-size: 2rem;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      .servico-img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+      }
+
+      .servico-section ul {
+        padding-left: 1rem;
+      }
+
+    }
   </style>
 </head>
 
@@ -161,12 +211,23 @@
       </nav>
     </section>
   </header>
+  <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+    &#9776;
+  </div>
 
+  <nav class="mobile-sidebar" id="mobileSidebar">
+    <a href="index.html" onclick="closeMobileMenu()">Home</a>
+    <a href="servicos.html" onclick="closeMobileMenu()">Serviços</a>
+    <a href="contato.html" onclick="closeMobileMenu()">Contato</a>
+  </nav>
   <!-- IMAGEM CONTAINER + TEXTO NO TOPO DIREITO -->
   <div class="servicos-header">
     <div class="descricao">
-  <p>A Phoenix Inspeções atua com excelência na engenharia industrial, oferecendo serviços técnicos especializados com foco em segurança, qualidade e inovação. Com equipe qualificada e estrutura móvel equipada, realiza ensaios não destrutivos, inspeções, manutenção, consultoria e documentação técnica, sempre com responsabilidade e compromisso com resultados.</p>
-</div>
+      <p>A Phoenix Inspeções atua com excelência na engenharia industrial, oferecendo serviços técnicos especializados
+        com foco em segurança, qualidade e inovação. Com equipe qualificada e estrutura móvel equipada, realiza ensaios
+        não destrutivos, inspeções, manutenção, consultoria e documentação técnica, sempre com responsabilidade e
+        compromisso com resultados.</p>
+    </div>
   </div>
 
   <!-- TÍTULO PRINCIPAL -->
@@ -181,15 +242,33 @@
       <div class="servico-text">
         <h2><span class="titulo-branco">ENSAIOS NÃO DESTRUTIVOS</span> <span class="titulo-destaque">(END)</span></h2>
         <ul>
-          <li><h1>Ultrassom Convencional, Phased Array, A, B e C-Scan</h1></li>
-          <li><h1>Medição de Espessura</h1></li>
-          <li><h1>Líquido Penetrante (LP)</h1></li>
-          <li><h1>Partículas Magnéticas</h1></li>
-          <li><h1>Ensaio Visual de Solda (EVS)</h1></li>
-          <li><h1>Ensaio por Estanqueidade e Holiday Detector</h1></li>
-          <li><h1>Ensaios de Dureza e Boroscopia</h1></li>
-          <li><h1>Ensaios por PMI (Positive Material Identification)</h1></li>
-          <li><h1>Análise de Vibração</h1></li>
+          <li>
+            <h1>Ultrassom Convencional, Phased Array, A, B e C-Scan</h1>
+          </li>
+          <li>
+            <h1>Medição de Espessura</h1>
+          </li>
+          <li>
+            <h1>Líquido Penetrante (LP)</h1>
+          </li>
+          <li>
+            <h1>Partículas Magnéticas</h1>
+          </li>
+          <li>
+            <h1>Ensaio Visual de Solda (EVS)</h1>
+          </li>
+          <li>
+            <h1>Ensaio por Estanqueidade e Holiday Detector</h1>
+          </li>
+          <li>
+            <h1>Ensaios de Dureza e Boroscopia</h1>
+          </li>
+          <li>
+            <h1>Ensaios por PMI (Positive Material Identification)</h1>
+          </li>
+          <li>
+            <h1>Análise de Vibração</h1>
+          </li>
         </ul>
       </div>
     </div>
@@ -201,12 +280,24 @@
       <div class="servico-text">
         <h2><span class="titulo-branco">INSPEÇÕES</span> <span class="titulo-destaque">TÉCNICAS</span></h2>
         <ul>
-          <li><h1>Soldagem (nível I e II)</h1></li>
-          <li><h1>Equipamentos Estáticos e Dinâmicos</h1></li>
-          <li><h1>Juntas Soldadas, Fundidos e Laminados</h1></li>
-          <li><h1>Obras civis, mecânicas, elétricas e instrumentais</h1></li>
-          <li><h1>Inspeções conforme NR-11, NR-12, NR-13, NR-14 e NR-20</h1></li>
-          <li><h1>Monitoramento Aéreo com Drones (IMAD)</h1></li>
+          <li>
+            <h1>Soldagem (nível I e II)</h1>
+          </li>
+          <li>
+            <h1>Equipamentos Estáticos e Dinâmicos</h1>
+          </li>
+          <li>
+            <h1>Juntas Soldadas, Fundidos e Laminados</h1>
+          </li>
+          <li>
+            <h1>Obras civis, mecânicas, elétricas e instrumentais</h1>
+          </li>
+          <li>
+            <h1>Inspeções conforme NR-11, NR-12, NR-13, NR-14 e NR-20</h1>
+          </li>
+          <li>
+            <h1>Monitoramento Aéreo com Drones (IMAD)</h1>
+          </li>
         </ul>
       </div>
     </div>
@@ -214,15 +305,25 @@
 
   <section class="servico-section">
     <div class="servico-row">
-      <img src="img/Consultoria.png" alt="Consultoria" class="servico-img">
+      <img src="img/consultoria.png" alt="Consultoria" class="servico-img">
       <div class="servico-text">
         <h2><span class="titulo-branco">CONSULTORIA</span> <span class="titulo-destaque">E PROJETOS</span></h2>
         <ul>
-          <li><h1>Consultoria In Loco</h1></li>
-          <li><h1>Elaboração de Procedimentos Executivos</h1></li>
-          <li><h1>Assessoria para Certificações (NRs e Normas Técnicas)</li>
-          <li><h1>Análise FMEA / AMFE (modos de falha e efeitos)</h1></li>
-          <li><h1>Adequações orçamentárias (budget) conforme demanda</h1></li>
+          <li>
+            <h1>Consultoria In Loco</h1>
+          </li>
+          <li>
+            <h1>Elaboração de Procedimentos Executivos</h1>
+          </li>
+          <li>
+            <h1>Assessoria para Certificações (NRs e Normas Técnicas)
+          </li>
+          <li>
+            <h1>Análise FMEA / AMFE (modos de falha e efeitos)</h1>
+          </li>
+          <li>
+            <h1>Adequações orçamentárias (budget) conforme demanda</h1>
+          </li>
         </ul>
       </div>
     </div>
@@ -232,13 +333,24 @@
     <div class="servico-row">
       <img src="img/Montagem.png" alt="Montagem e Manutenção" class="servico-img">
       <div class="servico-text">
-        <h2><span class="titulo-branco">MANUTENÇÃO, CONSTRUÇÃO</span> <span class="titulo-destaque">E MONTAGEM</span></h2>
+        <h2><span class="titulo-branco">MANUTENÇÃO, CONSTRUÇÃO</span> <span class="titulo-destaque">E MONTAGEM</span>
+        </h2>
         <ul>
-          <li><h1>Sistemas de Tubulação</h1></li>
-          <li><h1>Fornos, Tanques e Chaminés</h1></li>
-          <li><h1>Estruturas Metálicas</h1></li>
-          <li><h1>Reconstrução e impermeabilização de tanques</h1></li>
-          <li><h1>Pintura técnica e jateamento</h1></li>
+          <li>
+            <h1>Sistemas de Tubulação</h1>
+          </li>
+          <li>
+            <h1>Fornos, Tanques e Chaminés</h1>
+          </li>
+          <li>
+            <h1>Estruturas Metálicas</h1>
+          </li>
+          <li>
+            <h1>Reconstrução e impermeabilização de tanques</h1>
+          </li>
+          <li>
+            <h1>Pintura técnica e jateamento</h1>
+          </li>
         </ul>
       </div>
     </div>
@@ -250,10 +362,18 @@
       <div class="servico-text">
         <h2><span class="titulo-branco">DOCUMENTAÇÃO</span> <span class="titulo-destaque">E QUALIFICAÇÃO</span></h2>
         <ul>
-          <li><h1>Data Book com rastreabilidade, protocolos IQ e OQ</h1></li>
-          <li><h1>Laudos Técnicos e Emissão de ART</h1></li>
-          <li><h1>Treinamentos e Qualificação de Soldadores</h1></li>
-          <li><h1>Reconstituição de Prontuários NR-13</h1></li>
+          <li>
+            <h1>Data Book com rastreabilidade, protocolos IQ e OQ</h1>
+          </li>
+          <li>
+            <h1>Laudos Técnicos e Emissão de ART</h1>
+          </li>
+          <li>
+            <h1>Treinamentos e Qualificação de Soldadores</h1>
+          </li>
+          <li>
+            <h1>Reconstituição de Prontuários NR-13</h1>
+          </li>
         </ul>
       </div>
     </div>
@@ -265,15 +385,35 @@
       <div class="servico-text">
         <h2><span class="titulo-branco">INFRAESTRUTURA</span> <span class="titulo-destaque">MÓVEL</span></h2>
         <ul>
-          <li><h1>Laboratório Móvel</h1></li>
-          <li><h1>Plataforma Elevatória</h1></li>
-          <li><h1>Caminhão Munck</h1></li>
-          <li><h1>Contêiner técnico equipado</h1></li>
-          <li><h1>Equipamentos de última geração (medidores, ultrassons, boroscópios, etc.)</h1></li>
+          <li>
+            <h1>Laboratório Móvel</h1>
+          </li>
+          <li>
+            <h1>Plataforma Elevatória</h1>
+          </li>
+          <li>
+            <h1>Caminhão Munck</h1>
+          </li>
+          <li>
+            <h1>Contêiner técnico equipado</h1>
+          </li>
+          <li>
+            <h1>Equipamentos de última geração (medidores, ultrassons, boroscópios, etc.)</h1>
+          </li>
         </ul>
       </div>
     </div>
   </section>
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById("mobileSidebar").classList.toggle("active");
+    }
 
+    function closeMobileMenu() {
+      document.getElementById("mobileSidebar").classList.remove("active");
+    }
+  </script>
 </body>
+
+</html>
 </html>
