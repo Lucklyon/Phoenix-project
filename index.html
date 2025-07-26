@@ -25,7 +25,15 @@
             </nav>
         </section>
     </header>
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+  &#9776;
+</div>
 
+<nav class="mobile-sidebar" id="mobileSidebar">
+  <a href="#" onclick="closeMobileMenu()">Home</a>
+  <a href="servicos.html" onclick="closeMobileMenu()">Serviços</a>
+  <a href="contato.html" onclick="closeMobileMenu()">Contato</a>
+</nav>
     <div class="home-container">
         <section id="home">
             <div class="content">
@@ -36,10 +44,12 @@
                     Atuamos nos setores de petróleo, gás, logística, naval, energia e construção, oferecendo soluções eficazes,
                     seguras e com excelente custo-benefício.
                 </p>
+                <div class="desktoptext">
                 <p>
                     Com uma equipe qualificada e estrutura moderna, buscamos garantir a integridade de equipamentos e a conformidade
                     com normas técnicas como NR-13, NR-12, NR-20 e outras.
                 </p>
+                </div>
                 <a href="contato.html" class="btn">Contato</a>
             </div>
         </section>
@@ -73,7 +83,15 @@
       behavior: 'smooth'
     });
   }
+  function toggleMobileMenu() {
+    document.getElementById("mobileSidebar").classList.toggle("active");
+  }
+
+  function closeMobileMenu() {
+    document.getElementById("mobileSidebar").classList.remove("active");
+  }
 </script>
 </body>
 
 </html>
+
