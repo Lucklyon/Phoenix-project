@@ -25,7 +25,15 @@
       </nav>
     </section>
   </header>
+  <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+  &#9776;
+</div>
 
+<nav class="mobile-sidebar" id="mobileSidebar">
+  <a href="index.html" onclick="closeMobileMenu()">Home</a>
+  <a href="servicos.html" onclick="closeMobileMenu()">Serviços</a>
+  <a href="contato.html" onclick="closeMobileMenu()">Contato</a>
+</nav>
   <section style="margin-top: 100px;" class="contato">
     <h2 class="title">Fale <span>Conosco</span></h2>
 
@@ -37,7 +45,7 @@
 
       <!-- Proteções -->
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://lucklyon.github.io/Phoenix-project/obrigado.html"> <!-- Substitua pelo link da sua página de obrigado se quiser -->
+      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> <!-- Substitua pelo link da sua página de obrigado se quiser -->
 
       <button type="submit" class="btn">Enviar</button>
     </form>
@@ -70,6 +78,14 @@
       </a>
     </div>
   </section>
+<script>
+  function toggleMobileMenu() {
+    document.getElementById("mobileSidebar").classList.toggle("active");
+  }
 
+  function closeMobileMenu() {
+    document.getElementById("mobileSidebar").classList.remove("active");
+  }
+</script>
 </body>
 </html>
